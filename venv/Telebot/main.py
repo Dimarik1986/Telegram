@@ -2,8 +2,10 @@ import MyWeather.getWeather
 import Telebot.Scr.Script
 
 import telebot
+import Telebot.Token.Token
+TokenTG = Telebot.Token.Token.TokenTelegram
 
-bot = telebot.TeleBot('5516859607:AAFyEj5pmMde1oorumRw0t5t47wvf1b-bac')
+bot = telebot.TeleBot(token=TokenTG)
 
 
 @bot.message_handler(commands=['Start'])
